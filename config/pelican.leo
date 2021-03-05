@@ -60,11 +60,11 @@
 <v t="leo.20180423103639.1"><vh>2020 Fall CP 課程</vh>
 <v t="leo.20180423103656.1"><vh>@clean 20210813.md</vh>
 <v t="leo.20210305155520.1"><vh>newHeadline</vh></v>
-</v>
-</v>
-</v>
-</v>
 <v t="yen.20170108171733.83"><vh>產生 .key 與 .crt 指令</vh></v>
+</v>
+</v>
+</v>
+</v>
 </v>
 <v t="yen.20170108171930.1"><vh>@button https server</vh></v>
 <v t="yen.20170108171939.1"><vh>@button ipv6 https server</vh></v>
@@ -98,7 +98,7 @@ Title: 2020 Fall CP 課程
 Date: 2020-08-13 11:00
 Category: Misc
 Tags: 2020FallCP
-Slug: 2020-Fall-Intro-to-computer-programming
+Slug: 2020-Fall-Intro-to-computer-programming-1
 Author: yen
 ---
 
