@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': '\n \n', 'tags': '', 'url': 'About.html'}, {'title': '每周作業', 'text': '', 'tags': '', 'url': '每周作業.html'}, {'title': 'w1', 'text': '建立個人網站與倉儲', 'tags': '', 'url': 'w1.html'}]};
+var tipuesearch = {"pages": [{'title': 'About', 'text': '\n \n', 'tags': '', 'url': 'About.html'}, {'title': '每周作業', 'text': '', 'tags': '', 'url': '每周作業.html'}, {'title': 'w1', 'text': '建立個人網站與倉儲 \n 個人網頁: https://40823221.github.io/cd2021/content/index.html \n 個人倉儲: https://github.com/40823221/cd2021', 'tags': '', 'url': 'w1.html'}]};
