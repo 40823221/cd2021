@@ -48,15 +48,19 @@
 </v>
 </v>
 <v t="yen.20170108171733.71"><vh>@path markdown</vh>
-<v t="yen.20170108171733.81"><vh>@path pages</vh>
-<v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
+<v t="yen.20170108171733.81"><vh>2020</vh>
+<v t="yen.20170108171733.82"><vh>2020 Fall CP 課程</vh>
+<v t="leo.20210305154917.1"><vh>@clean 20200813.md</vh></v>
+</v>
 </v>
 </v>
 <v t="leo.20170710022054.1"><vh>可以另建節點存放 markdown 目錄下的 md 檔案</vh></v>
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2020</vh>
 <v t="leo.20180423103639.1"><vh>2020 Fall CP 課程</vh>
-<v t="leo.20180423103656.1"><vh>@edit 20200813.md</vh></v>
+<v t="leo.20180423103656.1"><vh>@clean 20210813.md</vh>
+<v t="leo.20210305155520.1"><vh>newHeadline</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -88,6 +92,40 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115093726.1"></t>
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180423103639.1"></t>
+<t tx="leo.20180423103656.1">@language md
+---
+Title: 2020 Fall CP 課程
+Date: 2020-08-13 11:00
+Category: Misc
+Tags: 2020FallCP
+Slug: 2020-Fall-Intro-to-computer-programming
+Author: yen
+---
+
+2020 Fall 計算機程式的教學主要介紹 Python 與 Flutter 在機械設計流程中的應用.
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+@others
+
+</t>
+<t tx="leo.20210305154917.1"></t>
+<t tx="leo.20210305155520.1">Python
+----
+Python 可以用來開發單機版的視窗程式套件 Pyslvs-UI
+
+Python 可以用來開發網際版的內容管理系統 CMSiMDE
+
+Python 可以用來控制 CoppeliaSim 與 Webots 虛擬環境中的機電系統
+
+Python 可以用於機器學習 Keras, Pytorch
+
+
+Flutter
+----
+
+Flutter 可以用來開發跨 Apple 與 Android 手機與平板上的 Apps
+@others</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -176,6 +214,27 @@ g.es("admin pelican 近端執行完畢")
 <t tx="yen.20170108171733.5"></t>
 <t tx="yen.20170108171733.71"></t>
 <t tx="yen.20170108171733.81"></t>
+<t tx="yen.20170108171733.82">@language md
+Title: About
+
+## cmstemplate
+
+課程倉儲: &lt;a href="https://github.com/mdecourse/cmstemplate"&gt;https://github.com/mdecourse/cmstemplate&lt;/a&gt;
+
+內容管理: &lt;a href="https://mdecourse.github.io/cmstemplate/"&gt;https://mdecourse.github.io/cmstemplate/&lt;/a&gt;
+
+課程投影片: &lt;a href="https://mdecourse.github.io/cmstemplate/reveal"&gt;https://mdecourse.github.io/cmstemplate/reveal&lt;/a&gt;
+
+課程網誌: &lt;a href="https://mdecourse.github.io/cmstemplate/blog"&gt;https://mdecourse.github.io/cmstemplate/blog&lt;/a&gt;
+
+
+
+
+
+
+
+
+</t>
 <t tx="yen.20170108171733.83">sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt
 
 </t>
