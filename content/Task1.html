@@ -1,0 +1,371 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40823221 cad2021</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40823221 cad2021</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='個人作業.html'>個人作業</a><ul class='dropdown'><li><a href='w1.html'>w1</a><li><a href='w2.html'>w2</a><li><a href='w3.html'>w3</a><li><a href='w4.html'>w4</a><li><a href='w5(W5).html'>w5(W5)</a><li><a href='w6.html'>w6</a><li><a href='w7.html'>w7</a><li><a href='w8.html'>w8</a><li><a href='w9.html'>w9</a><li><a href='w10.html'>w10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li><a href='W13.html'>W13</a><li><a href='W14.html'>W14</a></li></ul><li><a href='小組討論.html'>小組討論</a><li class='has-children'><a href='個人任務.html'>個人任務</a><ul class='dropdown'><li><a href='Task1.html'>Task1</a><li><a href='Task2.html'>Task2</a><li><a href='Task3.html'>Task3</a></li></ul><li><a href='影片.html'>影片</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">個人任務 << <a href='個人任務.html'>Previous</a> <a href='Task2.html'>Next</a> >> Task2<br /><h1>Task1</h1>
+<p><strong>依照40823245的程式執行</strong></p>
+<p><span><strong>詳細資料請到40823245個人網站閱覽(<a href="https://40823245.github.io/cd2021/content/task1.html">40823245-task1</a>)</strong></span></p>
+<h4>程式碼</h4>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_183421">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+<div class="line number44 index43 alt1">44</div>
+<div class="line number45 index44 alt2">45</div>
+<div class="line number46 index45 alt1">46</div>
+<div class="line number47 index46 alt2">47</div>
+<div class="line number48 index47 alt1">48</div>
+<div class="line number49 index48 alt2">49</div>
+<div class="line number50 index49 alt1">50</div>
+<div class="line number51 index50 alt2">51</div>
+<div class="line number52 index51 alt1">52</div>
+<div class="line number53 index52 alt2">53</div>
+<div class="line number54 index53 alt1">54</div>
+<div class="line number55 index54 alt2">55</div>
+<div class="line number56 index55 alt1">56</div>
+<div class="line number57 index56 alt2">57</div>
+<div class="line number58 index57 alt1">58</div>
+<div class="line number59 index58 alt2">59</div>
+<div class="line number60 index59 alt1">60</div>
+<div class="line number61 index60 alt2">61</div>
+<div class="line number62 index61 alt1">62</div>
+<div class="line number63 index62 alt2">63</div>
+<div class="line number64 index63 alt1">64</div>
+<div class="line number65 index64 alt2">65</div>
+<div class="line number66 index65 alt1">66</div>
+<div class="line number67 index66 alt2">67</div>
+<div class="line number68 index67 alt1">68</div>
+<div class="line number69 index68 alt2">69</div>
+<div class="line number70 index69 alt1">70</div>
+<div class="line number71 index70 alt2">71</div>
+<div class="line number72 index71 alt1">72</div>
+<div class="line number73 index72 alt2">73</div>
+<div class="line number74 index73 alt1">74</div>
+<div class="line number75 index74 alt2">75</div>
+<div class="line number76 index75 alt1">76</div>
+<div class="line number77 index76 alt2">77</div>
+<div class="line number78 index77 alt1">78</div>
+<div class="line number79 index78 alt2">79</div>
+<div class="line number80 index79 alt1">80</div>
+<div class="line number81 index80 alt2">81</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">def stu2b(account):</code></div>
+<div class="line number2 index1 alt1"><code class="html spaces">    </code><code class="html plain">if account == "40823231":</code></div>
+<div class="line number3 index2 alt2"><code class="html spaces">        </code><code class="html plain">return account + "-2"</code></div>
+<div class="line number4 index3 alt1"><code class="html spaces">    </code><code class="html plain">elif account[0:3] == "407":</code></div>
+<div class="line number5 index4 alt2"><code class="html spaces">        </code><code class="html plain">return "s" + account</code></div>
+<div class="line number6 index5 alt1"><code class="html spaces">    </code><code class="html plain">else:</code></div>
+<div class="line number7 index6 alt2"><code class="html spaces">        </code><code class="html plain">return account</code></div>
+<div class="line number8 index7 alt1"> </div>
+<div class="line number9 index8 alt2"><code class="html plain">teamb = []</code></div>
+<div class="line number10 index9 alt1"> </div>
+<div class="line number11 index10 alt2"><code class="html plain"># open file, default is read mode, since txt content no chinese char</code></div>
+<div class="line number12 index11 alt1"><code class="html plain"># no encoding = "UTF-8" is needed</code></div>
+<div class="line number13 index12 alt2"><code class="html plain">with open("stage3_2b.txt") as fh:</code></div>
+<div class="line number14 index13 alt1"><code class="html spaces">    </code><code class="html plain"># readlines will read into the whole line and put into list format</code></div>
+<div class="line number15 index14 alt2"><code class="html spaces">    </code><code class="html plain"># has \n at the end of each line</code></div>
+<div class="line number16 index15 alt1"><code class="html spaces">    </code><code class="html plain">data = fh.readlines()</code></div>
+<div class="line number17 index16 alt2"><code class="html plain">#print(len(data))</code></div>
+<div class="line number18 index17 alt1"><code class="html plain">for i in range(len(data)):</code></div>
+<div class="line number19 index18 alt2"><code class="html spaces">    </code><code class="html plain">group = data[i].rstrip("\n").split("\t")</code></div>
+<div class="line number20 index19 alt1"><code class="html spaces">    </code><code class="html plain">teamb.append(group)</code></div>
+<div class="line number21 index20 alt2"><code class="html spaces">    </code> </div>
+<div class="line number22 index21 alt1"><code class="html plain">output = ""    </code></div>
+<div class="line number23 index22 alt2"><code class="html plain">seperator = "-"*10 + "&lt;</code><code class="html keyword">br</code> <code class="html plain">/&gt;"</code></div>
+<div class="line number24 index23 alt1"> </div>
+<div class="line number25 index24 alt2"><code class="html plain">for i in teamb[0:]:</code></div>
+<div class="line number26 index25 alt1"><code class="html spaces">    </code><code class="html plain">team = i[0]</code></div>
+<div class="line number27 index26 alt2"><code class="html spaces">    </code><code class="html plain">leader = stu2b(i[1])</code></div>
+<div class="line number28 index27 alt1"><code class="html spaces">    </code><code class="html plain">m1 = stu2b(i[3])</code></div>
+<div class="line number29 index28 alt2"><code class="html spaces">    </code><code class="html plain">m2 = stu2b(i[5])</code></div>
+<div class="line number30 index29 alt1"><code class="html spaces">    </code><code class="html plain">m3 = stu2b(i[7])</code></div>
+<div class="line number31 index30 alt2"><code class="html spaces">    </code><code class="html plain">m4 = stu2b(i[9])</code></div>
+<div class="line number32 index31 alt1"><code class="html spaces">    </code><code class="html plain">m5 = stu2b(i[11])</code></div>
+<div class="line number33 index32 alt2"><code class="html spaces">    </code><code class="html plain">m6 = stu2b(i[13])</code></div>
+<div class="line number34 index33 alt1"><code class="html spaces">    </code> </div>
+<div class="line number35 index34 alt2"><code class="html spaces">    </code><code class="html plain">try:</code></div>
+<div class="line number36 index35 alt1"><code class="html spaces">        </code><code class="html plain">m7 = stu2b(i[15])</code></div>
+<div class="line number37 index36 alt2"><code class="html spaces">    </code><code class="html plain">except:</code></div>
+<div class="line number38 index37 alt1"><code class="html spaces">        </code><code class="html plain">m7 = ""</code></div>
+<div class="line number39 index38 alt2"><code class="html spaces">    </code><code class="html plain">try:</code></div>
+<div class="line number40 index39 alt1"><code class="html spaces">        </code><code class="html plain">m8 = stu2b(i[17])</code></div>
+<div class="line number41 index40 alt2"><code class="html spaces">    </code><code class="html plain">except:</code></div>
+<div class="line number42 index41 alt1"><code class="html spaces">        </code><code class="html plain">m8 = ""</code></div>
+<div class="line number43 index42 alt2"><code class="html spaces">        </code> </div>
+<div class="line number44 index43 alt1"><code class="html spaces">    </code><code class="html plain">leaderrepo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + leader + "/cd2021'</code><code class="html plain">&gt;" + leader + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number45 index44 alt2"><code class="html spaces">    </code><code class="html plain">leadersite = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + leader + ".github.io/cd2021'</code><code class="html plain">&gt;" + leader +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number46 index45 alt1"><code class="html spaces">    </code><code class="html plain">m1repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m1 + "/cd2021'</code><code class="html plain">&gt;" + m1 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number47 index46 alt2"><code class="html spaces">    </code><code class="html plain">m1site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m1 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m1 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number48 index47 alt1"><code class="html spaces">    </code><code class="html plain">m2repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m2 + "/cd2021'</code><code class="html plain">&gt;" + m2 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number49 index48 alt2"><code class="html spaces">    </code><code class="html plain">m2site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m2 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m2 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number50 index49 alt1"><code class="html spaces">    </code><code class="html plain">m3repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m3 + "/cd2021'</code><code class="html plain">&gt;" + m3 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number51 index50 alt2"><code class="html spaces">    </code><code class="html plain">m3site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m3 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m3 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number52 index51 alt1"><code class="html spaces">    </code><code class="html plain">m4repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m4 + "/cd2021'</code><code class="html plain">&gt;" + m4 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number53 index52 alt2"><code class="html spaces">    </code><code class="html plain">m4site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m4 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m4 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number54 index53 alt1"><code class="html spaces">    </code><code class="html plain">m5repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m5 + "/cd2021'</code><code class="html plain">&gt;" + m5 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number55 index54 alt2"><code class="html spaces">    </code><code class="html plain">m5site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m5 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m5 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number56 index55 alt1"><code class="html spaces">    </code><code class="html plain">m6repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m6 + "/cd2021'</code><code class="html plain">&gt;" + m6 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number57 index56 alt2"><code class="html spaces">    </code><code class="html plain">m6site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m6 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m6 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number58 index57 alt1"><code class="html spaces"> </code> </div>
+<div class="line number59 index58 alt2"> </div>
+<div class="line number60 index59 alt1"><code class="html spaces">    </code><code class="html plain">teamrepo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + leader + "/" + team + "'</code><code class="html plain">&gt;" + team + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number61 index60 alt2"><code class="html spaces">    </code><code class="html plain">teamsite =  "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m1 + ".github.io/" + team + "'</code><code class="html plain">&gt;" + team +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number62 index61 alt1"> </div>
+<div class="line number63 index62 alt2"><code class="html spaces">    </code><code class="html plain">output += teamrepo + " | " + teamsite + " | " +leaderrepo + " | " + leadersite + " | " +m1repo + " | " + m1site + " | " +m2repo + " | " + m2site + " | " +m3repo + " | " + m3site + " | " +m4repo + " | " + m4site + " | " +m5repo + " | " + m5site + " | " +m6repo + " | " + m6site </code></div>
+<div class="line number64 index63 alt1"><code class="html spaces">    </code> </div>
+<div class="line number65 index64 alt2"><code class="html spaces">    </code><code class="html plain">if m7 != "":</code></div>
+<div class="line number66 index65 alt1"><code class="html spaces">       </code><code class="html plain">m7repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m7 + "/cd2021'</code><code class="html plain">&gt;" + m7 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number67 index66 alt2"><code class="html spaces">       </code><code class="html plain">m7site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m7 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m7 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"   </code></div>
+<div class="line number68 index67 alt1"><code class="html spaces">       </code><code class="html plain">output += " |  " + m7repo + "| " + m7site</code></div>
+<div class="line number69 index68 alt2"><code class="html spaces">    </code><code class="html plain">else:</code></div>
+<div class="line number70 index69 alt1"><code class="html spaces">        </code><code class="html plain">output += "" </code></div>
+<div class="line number71 index70 alt2"><code class="html spaces">    </code> </div>
+<div class="line number72 index71 alt1"><code class="html spaces">    </code><code class="html plain">if m8 != "":</code></div>
+<div class="line number73 index72 alt2"><code class="html spaces">       </code><code class="html plain">m8repo = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://github.com/" + m8 + "/cd2021'</code><code class="html plain">&gt;" + m8 + " repo&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"</code></div>
+<div class="line number74 index73 alt1"><code class="html spaces">       </code><code class="html plain">m8site = "&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">'http://" + m8 + ".github.io/cd2021'</code><code class="html plain">&gt;" + m8 +  " site&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;"   </code></div>
+<div class="line number75 index74 alt2"><code class="html spaces">       </code><code class="html plain">output += " |  " + m8repo + "| " + m8site + "&lt;</code><code class="html keyword">br</code> <code class="html plain">/&gt;" + seperator</code></div>
+<div class="line number76 index75 alt1"><code class="html spaces">    </code><code class="html plain">else:</code></div>
+<div class="line number77 index76 alt2"><code class="html spaces">        </code><code class="html plain">output += "&lt;</code><code class="html keyword">br</code> <code class="html plain">/&gt;" + seperator</code></div>
+<div class="line number78 index77 alt1"> </div>
+<div class="line number79 index78 alt2"> </div>
+<div class="line number80 index79 alt1"><code class="html plain">print(output)</code></div>
+<div class="line number81 index80 alt2"><code class="html plain"># the following will use group data to generate needed html</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4>操作影片</h4>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/sOU1jbOwhbE" title="YouTube video player" width="560"></iframe></p>
+<h4>結果如下</h4>
+<p><a href="http://github.com/40823245/stage3-bg1">stage3-bg1 repo</a><span> </span>|<span> </span><a href="http://40823251.github.io/stage3-bg1">stage3-bg1 site</a><span> </span>|<span> </span><a href="http://github.com/40823245/cd2021">40823245 repo</a><span> </span>|<span> </span><a href="http://40823245.github.io/cd2021">40823245 site</a><span> </span>|<span> </span><a href="http://github.com/40823251/cd2021">40823251 repo</a><span> </span>|<span> </span><a href="http://40823251.github.io/cd2021">40823251 site</a><span> </span>|<span> </span><a href="http://github.com/40823208/cd2021">40823208 repo</a><span> </span>|<span> </span><a href="http://40823208.github.io/cd2021">40823208 site</a><span> </span>|<span> </span><a href="http://github.com/40823213/cd2021">40823213 repo</a><span> </span>|<span> </span><a href="http://40823213.github.io/cd2021">40823213 site</a><span> </span>|<span> </span><a href="http://github.com/40823232/cd2021">40823232 repo</a><span> </span>|<span> </span><a href="http://40823232.github.io/cd2021">40823232 site</a><span> </span>|<span> </span><a href="http://github.com/40823234/cd2021">40823234 repo</a><span> </span>|<span> </span><a href="http://40823234.github.io/cd2021">40823234 site</a><span> </span>|<span> </span><a href="http://github.com/40823235/cd2021">40823235 repo</a><span> </span>|<span> </span><a href="http://40823235.github.io/cd2021">40823235 site</a><span> </span>|<span> </span><a href="http://github.com/40823246/cd2021">40823246 repo</a>|<span> </span><a href="http://40823246.github.io/cd2021">40823246 site</a><br/>----------<br/><a href="http://github.com/40823217/stage3-bg2">stage3-bg2 repo</a><span> </span>|<span> </span><a href="http://40823201.github.io/stage3-bg2">stage3-bg2 site</a><span> </span>|<span> </span><a href="http://github.com/40823217/cd2021">40823217 repo</a><span> </span>|<span> </span><a href="http://40823217.github.io/cd2021">40823217 site</a><span> </span>|<span> </span><a href="http://github.com/40823201/cd2021">40823201 repo</a><span> </span>|<span> </span><a href="http://40823201.github.io/cd2021">40823201 site</a><span> </span>|<span> </span><a href="http://github.com/40823209/cd2021">40823209 repo</a><span> </span>|<span> </span><a href="http://40823209.github.io/cd2021">40823209 site</a><span> </span>|<span> </span><a href="http://github.com/40823210/cd2021">40823210 repo</a><span> </span>|<span> </span><a href="http://40823210.github.io/cd2021">40823210 site</a><span> </span>|<span> </span><a href="http://github.com/40823206/cd2021">40823206 repo</a><span> </span>|<span> </span><a href="http://40823206.github.io/cd2021">40823206 site</a><span> </span>|<span> </span><a href="http://github.com/40823207/cd2021">40823207 repo</a><span> </span>|<span> </span><a href="http://40823207.github.io/cd2021">40823207 site</a><span> </span>|<span> </span><a href="http://github.com/40823223/cd2021">40823223 repo</a><span> </span>|<span> </span><a href="http://40823223.github.io/cd2021">40823223 site</a><span> </span>|<span> </span><a href="http://github.com/40823224/cd2021">40823224 repo</a>|<span> </span><a href="http://40823224.github.io/cd2021">40823224 site</a><br/>----------<br/><a href="http://github.com/40823236/stage3-bg3">stage3-bg3 repo</a><span> </span>|<span> </span><a href="http://40823202.github.io/stage3-bg3">stage3-bg3 site</a><span> </span>|<span> </span><a href="http://github.com/40823236/cd2021">40823236 repo</a><span> </span>|<span> </span><a href="http://40823236.github.io/cd2021">40823236 site</a><span> </span>|<span> </span><a href="http://github.com/40823202/cd2021">40823202 repo</a><span> </span>|<span> </span><a href="http://40823202.github.io/cd2021">40823202 site</a><span> </span>|<span> </span><a href="http://github.com/40823203/cd2021">40823203 repo</a><span> </span>|<span> </span><a href="http://40823203.github.io/cd2021">40823203 site</a><span> </span>|<span> </span><a href="http://github.com/40823212/cd2021">40823212 repo</a><span> </span>|<span> </span><a href="http://40823212.github.io/cd2021">40823212 site</a><span> </span>|<span> </span><a href="http://github.com/40823219/cd2021">40823219 repo</a><span> </span>|<span> </span><a href="http://40823219.github.io/cd2021">40823219 site</a><span> </span>|<span> </span><a href="http://github.com/40823222/cd2021">40823222 repo</a><span> </span>|<span> </span><a href="http://40823222.github.io/cd2021">40823222 site</a><span> </span>|<span> </span><a href="http://github.com/40823231-2/cd2021">40823231-2 repo</a><span> </span>|<span> </span><a href="http://40823231-2.github.io/cd2021">40823231-2 site</a><span> </span>|<span> </span><a href="http://github.com/40823244/cd2021">40823244 repo</a>|<span> </span><a href="http://40823244.github.io/cd2021">40823244 site</a><br/>----------<br/><a href="http://github.com/40823239/stage3-bg4">stage3-bg4 repo</a><span> </span>|<span> </span><a href="http://s40723140.github.io/stage3-bg4">stage3-bg4 site</a><span> </span>|<span> </span><a href="http://github.com/40823239/cd2021">40823239 repo</a><span> </span>|<span> </span><a href="http://40823239.github.io/cd2021">40823239 site</a><span> </span>|<span> </span><a href="http://github.com/s40723140/cd2021">s40723140 repo</a><span> </span>|<span> </span><a href="http://s40723140.github.io/cd2021">s40723140 site</a><span> </span>|<span> </span><a href="http://github.com/s40723128/cd2021">s40723128 repo</a><span> </span>|<span> </span><a href="http://s40723128.github.io/cd2021">s40723128 site</a><span> </span>|<span> </span><a href="http://github.com/s40723139/cd2021">s40723139 repo</a><span> </span>|<span> </span><a href="http://s40723139.github.io/cd2021">s40723139 site</a><span> </span>|<span> </span><a href="http://github.com/s40723106/cd2021">s40723106 repo</a><span> </span>|<span> </span><a href="http://s40723106.github.io/cd2021">s40723106 site</a><span> </span>|<span> </span><a href="http://github.com/s40723135/cd2021">s40723135 repo</a><span> </span>|<span> </span><a href="http://s40723135.github.io/cd2021">s40723135 site</a><span> </span>|<span> </span><a href="http://github.com/s40723143/cd2021">s40723143 repo</a><span> </span>|<span> </span><a href="http://s40723143.github.io/cd2021">s40723143 site</a><span> </span>|<span> </span><a href="http://github.com/s40723215/cd2021">s40723215 repo</a>|<span> </span><a href="http://s40723215.github.io/cd2021">s40723215 site</a><br/>----------<br/><a href="http://github.com/40823221/stage3-bg5">stage3-bg5 repo</a><span> </span>|<span> </span><a href="http://40823204.github.io/stage3-bg5">stage3-bg5 site</a><span> </span>|<span> </span><a href="http://github.com/40823221/cd2021">40823221 repo</a><span> </span>|<span> </span><a href="http://40823221.github.io/cd2021">40823221 site</a><span> </span>|<span> </span><a href="http://github.com/40823204/cd2021">40823204 repo</a><span> </span>|<span> </span><a href="http://40823204.github.io/cd2021">40823204 site</a><span> </span>|<span> </span><a href="http://github.com/40823205/cd2021">40823205 repo</a><span> </span>|<span> </span><a href="http://40823205.github.io/cd2021">40823205 site</a><span> </span>|<span> </span><a href="http://github.com/40823220/cd2021">40823220 repo</a><span> </span>|<span> </span><a href="http://40823220.github.io/cd2021">40823220 site</a><span> </span>|<span> </span><a href="http://github.com/40823228/cd2021">40823228 repo</a><span> </span>|<span> </span><a href="http://40823228.github.io/cd2021">40823228 site</a><span> </span>|<span> </span><a href="http://github.com/40823237/cd2021">40823237 repo</a><span> </span>|<span> </span><a href="http://40823237.github.io/cd2021">40823237 site</a><span> </span>|<span> </span><a href="http://github.com/40823242/cd2021">40823242 repo</a><span> </span>|<span> </span><a href="http://40823242.github.io/cd2021">40823242 site</a><span> </span>|<span> </span><a href="http://github.com/40823250/cd2021">40823250 repo</a>|<span> </span><a href="http://40823250.github.io/cd2021">40823250 site</a><span> </span>|<span> </span><a href="http://github.com/40832244/cd2021">40832244 repo</a>|<span> </span><a href="http://40832244.github.io/cd2021">40832244 site</a><br/>----------<br/><a href="http://github.com/40823225/stage3-bg6">stage3-bg6 repo</a><span> </span>|<span> </span><a href="http://40823214.github.io/stage3-bg6">stage3-bg6 site</a><span> </span>|<span> </span><a href="http://github.com/40823225/cd2021">40823225 repo</a><span> </span>|<span> </span><a href="http://40823225.github.io/cd2021">40823225 site</a><span> </span>|<span> </span><a href="http://github.com/40823214/cd2021">40823214 repo</a><span> </span>|<span> </span><a href="http://40823214.github.io/cd2021">40823214 site</a><span> </span>|<span> </span><a href="http://github.com/40823218/cd2021">40823218 repo</a><span> </span>|<span> </span><a href="http://40823218.github.io/cd2021">40823218 site</a><span> </span>|<span> </span><a href="http://github.com/40823211/cd2021">40823211 repo</a><span> </span>|<span> </span><a href="http://40823211.github.io/cd2021">40823211 site</a><span> </span>|<span> </span><a href="http://github.com/40823248/cd2021">40823248 repo</a><span> </span>|<span> </span><a href="http://40823248.github.io/cd2021">40823248 site</a><span> </span>|<span> </span><a href="http://github.com/40823247/cd2021">40823247 repo</a><span> </span>|<span> </span><a href="http://40823247.github.io/cd2021">40823247 site</a><span> </span>|<span> </span><a href="http://github.com/40823216/cd2021">40823216 repo</a><span> </span>|<span> </span><a href="http://40823216.github.io/cd2021">40823216 site</a><span> </span>|<span> </span><a href="http://github.com/40823238/cd2021">40823238 repo</a>|<span> </span><a href="http://40823238.github.io/cd2021">40823238 site</a><br/>----------<br/><a href="http://github.com/40623144/stage3-bg7">stage3-bg7 repo</a><span> </span>|<span> </span><a href="http://40823233.github.io/stage3-bg7">stage3-bg7 site</a><span> </span>|<span> </span><a href="http://github.com/40623144/cd2021">40623144 repo</a><span> </span>|<span> </span><a href="http://40623144.github.io/cd2021">40623144 site</a><span> </span>|<span> </span><a href="http://github.com/40823233/cd2021">40823233 repo</a><span> </span>|<span> </span><a href="http://40823233.github.io/cd2021">40823233 site</a><span> </span>|<span> </span><a href="http://github.com/s40723224/cd2021">s40723224 repo</a><span> </span>|<span> </span><a href="http://s40723224.github.io/cd2021">s40723224 site</a><span> </span>|<span> </span><a href="http://github.com/40823241/cd2021">40823241 repo</a><span> </span>|<span> </span><a href="http://40823241.github.io/cd2021">40823241 site</a><span> </span>|<span> </span><a href="http://github.com/40423155/cd2021">40423155 repo</a><span> </span>|<span> </span><a href="http://40423155.github.io/cd2021">40423155 site</a><span> </span>|<span> </span><a href="http://github.com/40823227/cd2021">40823227 repo</a><span> </span>|<span> </span><a href="http://40823227.github.io/cd2021">40823227 site</a><span> </span>|<span> </span><a href="http://github.com/s40723233/cd2021">s40723233 repo</a><span> </span>|<span> </span><a href="http://s40723233.github.io/cd2021">s40723233 site</a><br/>----------</p><br />個人任務 << <a href='個人任務.html'>Previous</a> <a href='Task2.html'>Next</a> >> Task2</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
