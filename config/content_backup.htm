@@ -437,7 +437,112 @@
 <h1>小組討論</h1>
 <p><b><img alt="" height="258" src="/images/gitter.JPG" width="510"/></b></p>
 <h1>w16 exam</h1>
-<h1>個人任務</h1>
+<h4><span style="color: #ff0000;">1. Onshape 零組件繪製 </span></h4>
+<p><span><a href="https://cad.onshape.com/documents/727ab4c0f5b2f12d4c03740d/w/a771941a0bdca159e40ee9db/e/95a84cc317432ecac23ff4da">on shape連結</a></span></p>
+<p>Version1:</p>
+<p><img alt="" height="290" src="/images/Version1.PNG" width="516"/></p>
+<p>繪製這張圖的時候，忘記考慮到尺寸問題，所以導致整體比例很怪。</p>
+<p>Version2:</p>
+<p><img alt="" height="291" src="/images/Version2.PNG" width="517"/></p>
+<p>這次繪製出來的尺寸偏向正常，但是還會繼續修改。</p>
+<p>Version3:</p>
+<p><img alt="" height="290" src="/images/1.png" width="515"/></p>
+<p>這是最後on shape上傳的版本，下面有附連結。</p>
+<p></p>
+<p><span style="color: #ff0000;">2.建立 CoppeliaSim 4.1.0 MTB robot 場景 </span></p>
+<p><a href="https://drive.google.com/file/d/15gCgnzi085n7Z37lAv5BxyWVSgJFxzjU/view?usp=sharing">Google Drive連結</a></p>
+<p>Leo檔案:</p>
+<p>(參考老師提供的程式)藉由鍵盤按鍵來控制Robot角度</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_261128">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">114</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">r right turn </code><code class="py keyword">in</code> <code class="py plain">degree</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key r pressed axis1 angle adds </code><code class="py value">5</code> <code class="py plain">degrees</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">                     </code><code class="py plain">rotation1 </code><code class="py keyword">=</code> <code class="py plain">rotation1 </code><code class="py keyword">+</code> <code class="py value">5</code><code class="py keyword">*</code><code class="py plain">deg</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis1, rotation1)</code></div>
+<div class="line number5 index4 alt2"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">r</code></div>
+<div class="line number6 index5 alt1"><code class="py spaces">                </code><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">108</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">l left turn </code><code class="py keyword">in</code> <code class="py plain">degree</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key l pressed axis1 angle substract </code><code class="py value">5</code> <code class="py plain">degrees</code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">                     </code><code class="py plain">rotation1 </code><code class="py keyword">=</code> <code class="py plain">rotation1 </code><code class="py keyword">-</code> <code class="py value">5</code><code class="py keyword">*</code><code class="py plain">deg</code></div>
+<div class="line number9 index8 alt2"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis1, rotation1)</code></div>
+<div class="line number10 index9 alt1"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">l</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">                </code><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">100</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">d suction pad down</code></div>
+<div class="line number12 index11 alt1"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key d pressed axis3 will down </code><code class="py value">0.01</code> <code class="py plain">m plus calibration</code></div>
+<div class="line number13 index12 alt2"><code class="py spaces">                     </code><code class="py plain">distance3 </code><code class="py keyword">=</code> <code class="py plain">distance3 </code><code class="py keyword">+</code> <code class="py value">0.01</code> <code class="py keyword">+</code> <code class="py plain">calibration</code></div>
+<div class="line number14 index13 alt1"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis3, distance3)</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">d</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces">                </code><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">117</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">u suction pad up</code></div>
+<div class="line number17 index16 alt2"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key u pressed axis3 will up </code><code class="py value">0.01</code> <code class="py plain">m minus calibration</code></div>
+<div class="line number18 index17 alt1"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py plain">吸盤往下升 </code><code class="py value">1</code> <code class="py plain">公分加上校正值</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces">                     </code><code class="py plain">distance3 </code><code class="py keyword">=</code> <code class="py plain">distance3 </code><code class="py keyword">-</code> <code class="py value">0.01</code> <code class="py keyword">-</code> <code class="py plain">calibration</code></div>
+<div class="line number20 index19 alt1"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis3, distance3)</code></div>
+<div class="line number21 index20 alt2"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">u</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div></div>
+<p></p>
+<p><span style="color: #ff0000;">3.手臂末端加入 components-gripper-suction pad 吸盤</span></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/vFDx7t3ayIU" width="560"></iframe></p>
+<p>已經有做過放置吸盤到手臂末端了，而這個影片主要介紹吸盤如何放置與吸盤要從哪裡點出來。</p>
+<p>下面有40823214同學提供的吸盤程式:</p>
+<p><img alt="" height="291" src="/images/51.PNG" width="554"/></p>
+<p><img alt="" height="288" src="/images/52.PNG" width="553"/></p>
+<p></p>
+<p><span style="color: #ff0000;">4.逆向運動學函式</span></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2zhllMc2czM" width="560"></iframe></p>
+<p>裡面做程式完成後的成果。</p>
+<p><img alt="" height="229" src="/images/1-1.PNG" width="560"/></p>
+<p>這邊是計算程式計算面積和角度的地方。</p>
+<p><img alt="" height="375" src="/images/1-2.PNG" width="559"/></p>
+<p>這邊則是設定各軸的說明與定位，還有將吸盤往下設定多少(每個人都不同<span>需要自己調設</span>)，還有老師所要求的點(0.2,0.7)、(-0.3,-0.55)</p>
+<p>我所下降的高度是0.055，對我來說這高度是最剛好的高度，也是吸盤可以吸到的高度。</p>
+<p></p>
+<p><span style="color: #ff0000;">5.Python remote API 逆向運動學函式</span></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/wSn3VbhtFF8" width="560"></iframe></p>
+<p>這邊影片對API的操作做個大概，讓大家知道API該怎麼運作。</p>
+<p></p>
+<p><img alt="" height="329" src="/images/v1.PNG" width="550"/></p>
+<p><img alt="" height="127" src="/images/v2.PNG" width="640"/></p>
+<p>下面while的部分是可以讓程式重複運作，製作一個迴圈出來，使程式重複運作。</p>
+<p></p>
+<p>w16 exam心得:</p>
+<p>老師這次的小考試是可以對每個人的能力做出一個簡單的判斷，使大家知道自己的能力到哪邊，像是程式部分或是模擬的部分，也可以順邊將整體製作程序讓大家體驗，並訓練大家的能力。</p>
+<p>這次的方式跟以往都不同，以前可以跟隊友互相分工合作，每個人都可以挑選自己會擅長的，可是經過這次的w16 exam後，就可以知道只會一項技能是不夠的，所以我相信這是老師要考驗我們其他能力的時候，也是個可以學習別項技能的機會。</p>
+<p>這次 林厚宇 同學 40823214她將自己所繪的程式教了我們，使大家都有機會可以學到，順便了解這門課程的核心所在。</p>
+<p>這是厚宇同學幫我們所做的直播課程:</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/gZd9KlVS9BI" width="560"></iframe></p><h1>個人任務</h1>
 <h2>Task1</h2>
 <p><strong>依照40823245的程式執行</strong></p>
 <p><span><strong>詳細資料請到40823245個人網站閱覽(<a href="https://40823245.github.io/cd2021/content/task1.html">40823245-task1</a>)</strong></span></p>
