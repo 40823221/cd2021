@@ -148,6 +148,72 @@ img.add_border {
 <p></p>
 <p><span style="color: #ff0000;">2.建立 CoppeliaSim 4.1.0 MTB robot 場景 </span></p>
 <p><a href="https://drive.google.com/file/d/15gCgnzi085n7Z37lAv5BxyWVSgJFxzjU/view?usp=sharing">Google Drive連結</a></p>
+<p><a href="https://drive.google.com/file/d/1Sgezq8E7oekvdxpgDVOSRXksxR5p0L1D/view?usp=sharing">coppelaisim檔案</a></p>
+<p>Leo檔案:</p>
+<p>(參考老師提供的程式)藉由鍵盤按鍵來控制Robot角度</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_261128">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">114</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">r right turn </code><code class="py keyword">in</code> <code class="py plain">degree</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key r pressed axis1 angle adds </code><code class="py value">5</code> <code class="py plain">degrees</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">                     </code><code class="py plain">rotation1 </code><code class="py keyword">=</code> <code class="py plain">rotation1 </code><code class="py keyword">+</code> <code class="py value">5</code><code class="py keyword">*</code><code class="py plain">deg</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis1, rotation1)</code></div>
+<div class="line number5 index4 alt2"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">r</code></div>
+<div class="line number6 index5 alt1"><code class="py spaces">                </code><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">108</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">l left turn </code><code class="py keyword">in</code> <code class="py plain">degree</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key l pressed axis1 angle substract </code><code class="py value">5</code> <code class="py plain">degrees</code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">                     </code><code class="py plain">rotation1 </code><code class="py keyword">=</code> <code class="py plain">rotation1 </code><code class="py keyword">-</code> <code class="py value">5</code><code class="py keyword">*</code><code class="py plain">deg</code></div>
+<div class="line number9 index8 alt2"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis1, rotation1)</code></div>
+<div class="line number10 index9 alt1"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">l</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">                </code><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">100</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">d suction pad down</code></div>
+<div class="line number12 index11 alt1"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key d pressed axis3 will down </code><code class="py value">0.01</code> <code class="py plain">m plus calibration</code></div>
+<div class="line number13 index12 alt2"><code class="py spaces">                     </code><code class="py plain">distance3 </code><code class="py keyword">=</code> <code class="py plain">distance3 </code><code class="py keyword">+</code> <code class="py value">0.01</code> <code class="py keyword">+</code> <code class="py plain">calibration</code></div>
+<div class="line number14 index13 alt1"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis3, distance3)</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">d</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces">                </code><code class="py keyword">if</code> <code class="py plain">(auxiliaryData[</code><code class="py value">1</code><code class="py plain">]</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py value">117</code><code class="py plain">) then </code><code class="py keyword">-</code><code class="py keyword">-</code><code class="py plain">u suction pad up</code></div>
+<div class="line number17 index16 alt2"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">key u pressed axis3 will up </code><code class="py value">0.01</code> <code class="py plain">m minus calibration</code></div>
+<div class="line number18 index17 alt1"><code class="py spaces">                    </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py plain">吸盤往下升 </code><code class="py value">1</code> <code class="py plain">公分加上校正值</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces">                     </code><code class="py plain">distance3 </code><code class="py keyword">=</code> <code class="py plain">distance3 </code><code class="py keyword">-</code> <code class="py value">0.01</code> <code class="py keyword">-</code> <code class="py plain">calibration</code></div>
+<div class="line number20 index19 alt1"><code class="py spaces">                     </code><code class="py plain">sim.setJointPosition(axis3, distance3)</code></div>
+<div class="line number21 index20 alt2"><code class="py spaces">                </code><code class="py plain">end </code><code class="py keyword">-</code><code class="py keyword">-</code> <code class="py keyword">if</code> <code class="py plain">u</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>這是用鍵盤控制的程式:</p>
+<p><img alt="" height="281" src="./../images/511.PNG" width="535"/></p>
+<p>40823214同學有幫助我們一起將程式完成。</p>
+<p></p>
+</div>
+</div>
 <div></div>
 <p></p>
 <p><span style="color: #ff0000;">3.手臂末端加入 components-gripper-suction pad 吸盤</span></p>
